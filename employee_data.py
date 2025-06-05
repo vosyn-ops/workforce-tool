@@ -63,12 +63,12 @@ while len(employee_data) < 100:
 
     if availability == "Full-Time":
         end_date = start_date + timedelta(days=90)  # 3 months
-        current_projects = random.randint(0, 4)
-        current_availability = random.choice(full_time) if current_projects > 0 else 40
+        current_projects = 0
+        current_availability = 40
     else:
         end_date = start_date + timedelta(days=180)  # 6 months
-        current_projects = random.randint(0, 2)
-        current_availability = random.choice(part_time) if current_projects > 0 else 20
+        current_projects = 0
+        current_availability = 20
 
     language = random.choice(languages)
     skill = random.choice(skills)
